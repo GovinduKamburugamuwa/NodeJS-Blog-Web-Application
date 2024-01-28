@@ -1,0 +1,168 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+    
+/* General Styles */
+body {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-family: 'Noto Serif', serif;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Resetting Defaults */
+p, h1, h2, h3, a, ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Navigation and Footer */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+nav h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+nav p,
+nav a {
+    color: #777;
+    font-weight: 300;
+}
+
+footer {
+    color: #777;
+    text-align: center;
+    margin: 40px auto;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+h3 {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Content */
+.content {
+    margin-left: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.details {
+    position: relative;
+}
+
+.delete {
+    position: absolute;
+    top: 5;
+    right: 5;
+    border-radius: 8px; /* Set the border-radius to create a square with rounded corners */
+    padding: 8px;
+    background-color: #dc143c;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.delete:hover {
+    cursor: pointer;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+    background-color: #a30022;
+}
+
+
+/* Form Styles */
+.create-blog form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.create-blog input,
+.create-blog textarea {
+    display: block;
+    width: calc(100% - 16px);
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.create-blog label {
+    display: block;
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+textarea {
+    height: 120px;
+}
+
+.create-blog button {
+    margin-top: 20px;
+    background: crimson;
+    color: white;
+    padding: 8px 16px;
+    border: 0;
+    font-size: 1.2em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.create-blog button:hover {
+    background-color: #900;
+}
+
+.single {
+    display: block;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #222;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-left: 6px solid #dc143c;
+}
+
+.single:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: crimson;
+}
